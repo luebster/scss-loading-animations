@@ -1,0 +1,22 @@
+{
+  "name": "scss-loading-animations",
+  "homepage": "https://github.com/luebster/scss-loading-animations",
+  "version": "1.0.0",
+  "authors": [
+    "Chris Luebbe"
+  ],
+  "description": "A set of SCSS mixins for single element loaders and spinners",
+  "main": "src/loaders.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "loaders",
+    "spinners",
+    "scss",
+    "sass",
+    "loading animation"
+  ],
+  "license": "MIT"
+}
