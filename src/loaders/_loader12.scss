@@ -20,7 +20,7 @@
 
   @if ($align == middle) {
     top: 50%;
-    margin: -($size * 2 + math.div($size / 2)) auto 0;
+    margin: -($size * 2 + math.div($size, 2)) auto 0;
   }
   @else {
     top: -$size * 2;

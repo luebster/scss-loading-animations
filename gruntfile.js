@@ -9,13 +9,13 @@ module.exports = function (grunt) {
         },
         compile: {
           files: {
-            './examples/style.css': './examples/scss/site.scss'
+            './examples/style.css': './examples/scss/style.scss'
           }
         }
       },
       watch: {
         scss: {
-          files: ['./examples/scss/style.scss'],
+          files: ['./examples/scss/style.scss', './src/**/*.scss'],
           tasks: ['sass']
         }
       }
