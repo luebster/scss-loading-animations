@@ -1,4 +1,4 @@
-# Scss-Loadind-Animations
+# Scss-Loading-Animations
 A set of SCSS mixins for single element loaders and spinners 
 
 ## Getting started
@@ -52,20 +52,21 @@ But you can also override these default settings in the mixin call:
 @include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
 ```
 
-All loaders can be also aligned to center, while including the mixin with parameter `$align`,
-`$align: center` is just for x axis, `$align: middle` is for both axes.
+All loaders can be also aligned to center, while including the mixin with parameter `$align`. `$align: center` is just for x axis, `$align: middle` is for both axes.
 
 **PARAMETERS**
 
-Parameter | Type | Default value
------------- | ------------- | -------------
-$size | Number | $loader-size
-$height | Number | $loader-height
-$border-size | Number | $loader-border-size
-$color | Color | $loader-color
-$duration | Time | $loader-animation-duration
-$gap | Number | $loader-gap
-$align | Keyword | null
+
+Parameter | Type | Default value |
+------------ | ------------- | ------------- |
+`$size` | Number | `$loader-size` |
+`$height` | Number | `$loader-height` |
+`$border-size` | Number | `$loader-border-size` |
+`$color` | Color | `$loader-color` |
+`$duration` | Time | `$loader-animation-duration` |
+`$gap` | Number | `$loader-gap` |
+`$align` | Keyword | `null` |
+
 
 **NOTE**: Some loaders may not need `$height` and `$gap` parameters.
 
@@ -73,7 +74,6 @@ $align | Keyword | null
 
 Some loaders which are using `box-shadow` for animation may be causing high cpu usage and lag, I'll need to look into more details and fix it, if it's possible.
 
+**ATTRIBUTION**
 
-## Contributing
-
-If you have some new idea for loader/spinner or you want to fix loader, feel free to create a pull request.
+This project is a continuation from [SpinThatShit](https://github.com/MatejKustec/SpinThatShit), which is no longer being maintained [per the author](https://github.com/MatejKustec/SpinThatShit/issues/10#issuecomment-984859922).
