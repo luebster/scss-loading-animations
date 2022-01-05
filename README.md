@@ -1,16 +1,14 @@
 # Scss-Loadind-Animations
 A set of SCSS mixins for single element loaders and spinners 
 
-[View examples](https://luebster.github.io/Scss-Loading-Animations/)
-
 ## Getting started
 
 
 ```
-npm install Scss-Loading-Animations
+npm install scss-loading-animations
 ```
 ```
-bower install Scss-Loading-Animations
+bower install scss-loading-animations
 ```
 
 OR
@@ -22,7 +20,7 @@ OR
 
 ## Usage
 
-Create a div with your custom loader class name:
+Create a div with your custom loader class name.
 
 ```html
 <div class="your-loader"></div>
@@ -36,7 +34,8 @@ In your custom class name include a mixin of a loader. All loaders are ordered b
 }
 ```
 
-In `_variables.scss` there are default settings for loaders
+## Defaults
+Default settings for the loaders are in `_variables.scss`.
 
 ```scss
 $loader-color: #0052ec;
@@ -47,14 +46,14 @@ $loader-gap: 12px;
 $loader-animation-duration: 1s;
 ```
 
-But you can also change these default settings, while your're including loader
+But you can also override these default settings in the mixin call:
 
 ```scss
 @include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
 ```
 
-All loaders can be also aligned to center, while including loader with parameter `$align`,
-`$align: center` is just for x axis, `$align: middle` is for both axis.
+All loaders can be also aligned to center, while including the mixin with parameter `$align`,
+`$align: center` is just for x axis, `$align: middle` is for both axes.
 
 **PARAMETERS**
 
