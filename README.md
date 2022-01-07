@@ -9,9 +9,9 @@ A set of SCSS mixins for single element loaders and spinners
 ```
 npm install scss-loading-animations
 ```
-```
+<!-- ```
 bower install scss-loading-animations
-```
+``` -->
 
 OR
 
