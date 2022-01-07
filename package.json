@@ -1,6 +1,6 @@
 {
   "name": "scss-loading-animations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of SCSS mixins for single element loaders and spinners",
   "dependencies": {},
   "devDependencies": {
