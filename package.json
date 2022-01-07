@@ -1,14 +1,14 @@
 {
   "name": "scss-loading-animations",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "A set of SCSS mixins for single element loaders and spinners",
-  "dependencies": {
-    "grunt": "^1.4.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.1.0",
-    "sass": "^1.45.2"
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "1.4.1",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-sass": "3.1.0",
+    "sass": "1.45.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
