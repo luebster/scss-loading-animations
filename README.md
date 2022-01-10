@@ -42,7 +42,7 @@ In the SCSS for your class, include a mixin for a given loader. All [loader exam
 
 
 ## Defaults
-Default values for the loaders are in `_variables.scss`.
+Default values for the loaders are in `_variables.scss`. If you want to change these values globally, simply define them before you import `loaders.scss`.
 
 ```scss
 $loader-color: #0052ec;
@@ -51,6 +51,8 @@ $loader-height: 20px;
 $loader-border-size: 8px;
 $loader-gap: 12px;
 $loader-animation-duration: 1s;
+
+@import "./src/loaders";
 ```
 
 You can override these default values in the mixin call:
