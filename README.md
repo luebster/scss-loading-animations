@@ -1,4 +1,4 @@
-# SCSS-Loading-Animations
+# SCSS Loading Animations
 A set of SCSS mixins for single element loaders and spinners 
 
 [View examples](https://luebster.github.io/scss-loading-animations/)
