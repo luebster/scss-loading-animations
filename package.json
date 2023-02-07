@@ -4,7 +4,7 @@
   "description": "A set of SCSS mixins for single element loaders and spinners",
   "dependencies": {},
   "devDependencies": {
-    "grunt": "1.6.0",
+    "grunt": "1.6.1",
     "grunt-contrib-watch": "1.1.0",
     "grunt-sass": "3.1.0",
     "sass": "1.58.0"
