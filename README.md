@@ -1,5 +1,7 @@
-# Scss-Loading-Animations
+# SCSS Loading Animations
 A set of SCSS mixins for single element loaders and spinners 
+
+[View examples](https://luebster.github.io/scss-loading-animations/)
 
 ## Getting started
 
@@ -7,26 +9,30 @@ A set of SCSS mixins for single element loaders and spinners
 ```
 npm install scss-loading-animations
 ```
-```
+<!-- ```
 bower install scss-loading-animations
-```
+``` -->
 
 OR
 
-* Clone or download repo
-* Include `src` folder to your project
+1. Download the [latest release](https://github.com/luebster/scss-loading-animations/releases).
+2. Copy `src` folder to your project.
+3. Import `loaders.scss`.
 
+```scss
+@import "./src/loaders";
+```
 
 
 ## Usage
 
-Create a div with your custom loader class name.
+Create a div with a class name of your choosing.
 
 ```html
 <div class="your-loader"></div>
 ```
 
-In your custom class name include a mixin of a loader. All loaders are ordered by number, so you will have to take a look in examples folder for your loader number.
+In the SCSS for your class, include a mixin for a given loader. All [loader examples]((https://luebster.github.io/scss-loading-animations/)) are numbered. These numbers map to the mixin class name. For example, if you want to use loader01 from the examples page:
 
 ```scss
 .your-loader {
@@ -34,8 +40,9 @@ In your custom class name include a mixin of a loader. All loaders are ordered b
 }
 ```
 
+
 ## Defaults
-Default settings for the loaders are in `_variables.scss`.
+Default values for the loaders are in `_variables.scss`. If you want to change these values globally, simply define them before you import `loaders.scss`.
 
 ```scss
 $loader-color: #0052ec;
@@ -44,9 +51,11 @@ $loader-height: 20px;
 $loader-border-size: 8px;
 $loader-gap: 12px;
 $loader-animation-duration: 1s;
+
+@import "./src/loaders";
 ```
 
-But you can also override these default settings in the mixin call:
+You can override these default values in the mixin call:
 
 ```scss
 @include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
@@ -54,8 +63,8 @@ But you can also override these default settings in the mixin call:
 
 All loaders can be also aligned to center, while including the mixin with parameter `$align`. `$align: center` is just for x axis, `$align: middle` is for both axes.
 
-**PARAMETERS**
 
+**MIXIN PARAMETERS**
 
 Parameter | Type | Default value |
 ------------ | ------------- | ------------- |
@@ -76,4 +85,4 @@ Some loaders which are using `box-shadow` for animation may be causing high cpu 
 
 **ATTRIBUTION**
 
-This project is a continuation from [SpinThatShit](https://github.com/MatejKustec/SpinThatShit), which is no longer being maintained [per the author](https://github.com/MatejKustec/SpinThatShit/issues/10#issuecomment-984859922).
+This project is a continuation from [SpinThatShit](https://github.com/MatejKustec/SpinThatShit), which is no longer being maintained [according to the author](https://github.com/MatejKustec/SpinThatShit/issues/10#issuecomment-984859922).

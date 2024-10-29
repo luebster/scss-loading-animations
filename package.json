@@ -1,14 +1,20 @@
 {
   "name": "scss-loading-animations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of SCSS mixins for single element loaders and spinners",
-  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "1.6.1",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-sass": "3.1.0",
+    "sass": "1.80.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luebster/scss-loading-animations.git"
+    "url": "https://github.com/luebster/scss-loading-animations.git"
   },
   "keywords": [
     "css",
@@ -16,18 +22,12 @@
     "spinners",
     "scss",
     "sass",
-    "loading animation"
+    "loading animations"
   ],
   "author": "Chris Luebbe",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luebster/scss-loading-animations/issues"
   },
-  "homepage": "https://github.com/luebster/scss-loading-animations",
-  "devDependencies": {
-    "grunt": "1.4.1",
-    "grunt-contrib-watch": "1.1.0",
-    "grunt-sass": "3.1.0",
-    "sass": "1.45.2"
-  }
+  "homepage": "https://luebster.github.io/scss-loading-animations"
 }

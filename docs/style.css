@@ -14,13 +14,50 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.section {
+  text-align: center;
+  color: #0052ec;
+  margin: 24px 0;
+}
+.section p {
+  margin-bottom: 56px;
+}
+.section .button.is-medium .icon * {
+  font-size: 2rem;
+}
+.section h2 {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  width: 100%;
+}
+.section h2 span {
+  background: #fff;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+.section h2:before {
+  background: #c3d8ff;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 10%;
 }
 
-.item {
+.loaderContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.loaderContainer .item {
   width: 280px;
   height: 280px;
   margin: 20px;
@@ -28,13 +65,18 @@ body {
   border-radius: 3px;
   position: relative;
 }
-
-.number {
+.loaderContainer .item .loader-number {
   position: absolute;
   top: 16px;
   right: 16px;
   color: #c3d8ff;
   font-size: 30px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: transparent;
+  text-align: center;
 }
 
 .loader01 {
@@ -215,11 +257,11 @@ body {
   height: 16px;
   border-radius: 50%;
   position: relative;
-  animation: loader07-u6ei437 1s linear infinite;
+  animation: loader07-u59khd6 1s linear infinite;
   top: 50%;
   margin: -8px auto 0;
 }
-@keyframes loader07-u6ei437 {
+@keyframes loader07-u59khd6 {
   0% {
     box-shadow: 0 -27px 0 0 rgba(0, 82, 236, 0.05), 19px -19px 0 0 rgba(0, 82, 236, 0.1), 27px 0 0 0 rgba(0, 82, 236, 0.2), 19px 19px 0 0 rgba(0, 82, 236, 0.3), 0 27px 0 0 rgba(0, 82, 236, 0.4), -19px 19px 0 0 rgba(0, 82, 236, 0.6), -27px 0 0 0 rgba(0, 82, 236, 0.8), -19px -19px 0 0 #0052ec;
   }
@@ -253,11 +295,11 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
-  animation: loader08-u6ei444 1s ease infinite;
+  animation: loader08-u59khdc 1s ease infinite;
   top: 50%;
   margin: -46px auto 0;
 }
-@keyframes loader08-u6ei444 {
+@keyframes loader08-u59khdc {
   0%, 100% {
     box-shadow: -13px 20px 0 #0052ec, 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 rgba(0, 82, 236, 0.2);
   }
@@ -277,7 +319,7 @@ body {
   height: 48px;
   background: #0052ec;
   position: relative;
-  animation: loader09-u6ei44o 1s ease-in-out infinite;
+  animation: loader09-u59khdq 1s ease-in-out infinite;
   animation-delay: 0.4s;
   top: 50%;
   margin: -28px auto 0;
@@ -288,7 +330,7 @@ body {
   width: 10px;
   height: 48px;
   background: #0052ec;
-  animation: loader09-u6ei44o 1s ease-in-out infinite;
+  animation: loader09-u59khdq 1s ease-in-out infinite;
 }
 .loader09::before {
   right: 18px;
@@ -298,7 +340,7 @@ body {
   left: 18px;
   animation-delay: 0.6s;
 }
-@keyframes loader09-u6ei44o {
+@keyframes loader09-u59khdq {
   0%, 100% {
     box-shadow: 0 0 0 #0052ec, 0 0 0 #0052ec;
   }
@@ -312,7 +354,7 @@ body {
   height: 28px;
   border-radius: 50%;
   position: relative;
-  animation: loader10-u6ei45m 0.9s ease alternate infinite;
+  animation: loader10-u59khds 0.9s ease alternate infinite;
   animation-delay: 0.36s;
   top: 50%;
   margin: -42px auto 0;
@@ -323,7 +365,7 @@ body {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  animation: loader10-u6ei45m 0.9s ease alternate infinite;
+  animation: loader10-u59khds 0.9s ease alternate infinite;
 }
 .loader10::before {
   left: -40px;
@@ -333,7 +375,7 @@ body {
   right: -40px;
   animation-delay: 0.54s;
 }
-@keyframes loader10-u6ei45m {
+@keyframes loader10-u59khds {
   0% {
     box-shadow: 0 28px 0 -28px #0052ec;
   }
@@ -348,7 +390,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 40px 0 #0052ec;
   position: relative;
-  animation: loader11-u6ei46e 0.8s ease-in-out alternate infinite;
+  animation: loader11-u59khem 0.8s ease-in-out alternate infinite;
   animation-delay: 0.32s;
   top: 50%;
   margin: -50px auto 0;
@@ -360,7 +402,7 @@ body {
   height: 20px;
   border-radius: 50%;
   box-shadow: 0 40px 0 #0052ec;
-  animation: loader11-u6ei46e 0.8s ease-in-out alternate infinite;
+  animation: loader11-u59khem 0.8s ease-in-out alternate infinite;
 }
 .loader11::before {
   left: -30px;
@@ -370,7 +412,7 @@ body {
   right: -30px;
   animation-delay: 0.16s;
 }
-@keyframes loader11-u6ei46e {
+@keyframes loader11-u59khem {
   0% {
     box-shadow: 0 40px 0 #0052ec;
   }
@@ -384,11 +426,11 @@ body {
   height: 20px;
   border-radius: 50%;
   position: relative;
-  animation: loader12-u6ei46j 1s linear alternate infinite;
+  animation: loader12-u59khf6 1s linear alternate infinite;
   top: 50%;
   margin: -50px auto 0;
 }
-@keyframes loader12-u6ei46j {
+@keyframes loader12-u59khf6 {
   0% {
     box-shadow: -60px 40px 0 2px #0052ec, -30px 40px 0 0 rgba(0, 82, 236, 0.2), 0 40px 0 0 rgba(0, 82, 236, 0.2), 30px 40px 0 0 rgba(0, 82, 236, 0.2), 60px 40px 0 0 rgba(0, 82, 236, 0.2);
   }
